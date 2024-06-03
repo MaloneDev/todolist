@@ -1,5 +1,8 @@
 #Todo List
-![image](https://github.com/MaloneDev/todolist/assets/171465969/d6b3c5ad-ed0f-489f-af99-06ae44025af0)
+
+[Screencast from 2024-06-02 23-07-17.webm](https://github.com/MaloneDev/todolist/assets/171465969/f099f365-d74f-478e-9d0e-b0d88702b906)
+
+
 
 Este é um projeto simples de uma lista de tarefas (Todo List) desenvolvido em HTML, CSS e JavaScript.
 
