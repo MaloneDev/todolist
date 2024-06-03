@@ -10,10 +10,12 @@ Funcionalidades
 Adicionar tarefas
 Exibir uma lista de tarefas
 (Adicione mais funcionalidades se houver)
-Como usar
+
+#Como usar
 Abra o arquivo index.html em seu navegador.
 Digite uma tarefa no campo de entrada e clique no botão "Adicionar" para adicionar a tarefa à lista.
-Dependências
+
+#Dependências
 Este projeto usa as seguintes bibliotecas e frameworks:
 
 jQuery
