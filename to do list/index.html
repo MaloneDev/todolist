@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <title>Todo list</title>
+</head>
+
+<body>
+    <div class="container">
+        <input class="input-task" placeholder="Adicione tarefas...">
+        <button class="button-add-task">Adicionar</button>
+
+        <ul class="list-tasks">
+
+        </ul>
+    </div>
+
+    <div id="backdrop"></div>
+
+<div id="modalInputInvalido" class="modal" tabindex="-1" role="dialog" >
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Atençao</h5>
+
+            </div>
+            <div class="modal-body">
+              <p>Não é possível incluir uma tarefa sem texto.</p>
+            </div>
+            <div class="modal-footer">
+             
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+
+
+</body>
+<script src="./assets/js/scripts.js"></script>
+</html>

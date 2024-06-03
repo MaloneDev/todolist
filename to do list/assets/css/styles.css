@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  outline: none;
+}
+
+body {
+    background-image: url(../background.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
+}
+
+.container {
+  background-color: #d1d1d1;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 0;
+}
+
+.input-task {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.button-add-task {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #003329;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 0 15px;
+  float: right;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button-add-task:hover {
+  opacity: 0.8;
+}
+
+.button-add-task:active {
+  opacity: 0.6;
+}
+
+.list-tasks {
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.task {
+  background-color: #f2f2f2;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+img {
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+  opacity: 1;
+}
+
+#backdrop {
+  position: fixed; /* Fixa o backdrop em relação à janela do navegador */
+  top: 0;
+  left: 0;
+  width: 100%; /* Faz o backdrop cobrir toda a largura da página */
+  height: 100%; /* Faz o backdrop cobrir toda a altura da página */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Cor de fundo preta com 50% de opacidade */
+  z-index: 10; /* Coloca o backdrop acima do conteúdo normal da página, mas abaixo do modal */
+  display: none; /* Inicialmente escondido */
+}
+.modal-title {
+  color: #fc0000;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn-danger {
+  position: absolute;
+
+  margin-left: 340px;
+
+}
+body .btn-danger {
+    margin-top: 10px !important;
+  }
+#modalInputInvalido {
+  display: none;
+  background-color: #d1d1d1;
+  width: 500px;
+  border-radius: 10px;
+  padding: 33px;
+  margin-top: -329px;
+
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  position: fixed; /* Fixa o modal em relação à janela do navegador */
+  top: 50%; /* Centraliza o modal verticalmente */
+  left: 50%; /* Centraliza o modal horizontalmente */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Necessário para centralizar corretamente */
+  z-index: 20; /* Coloca o modal acima do backdrop */
+}
+
+.done {
+  background-color: #8fac55;
+  text-decoration: line-through;
+}
